@@ -52,36 +52,3 @@ It can be "derived" by considering that we can get the area of region AB below b
 
 ![Visualizing the "derivation" of Bayes' theorem, from @bonilla.](images/venn-last.png){#fig-bayes-venn align="center" width="70%"}
 
-
-### Eruption History
-
-A number of eruptions were recorded since the colonization of the islands by Europeans in the late 1400s, these are summarised in @tbl-history.
-
-| Name      | Year |
-| ----------- | ----------- |
-| Current      | 2021       |
-| Teneguía   | 1971        |
-| Nambroque   | 1949        |
-| El Charco   | 1712        |
-| Volcán San Antonio   | 1677        |
-| Volcán San Martin   | 1646        |
-| Tajuya near El Paso   | 1585        |
-| Montaña Quemada   | 1492        |
-
-: Recent historic eruptions on La Palma {#tbl-history}
-
-This equates to an eruption on average every 79 years up until the 1971 event. The probability of a future eruption can be modeled by a Poisson distribution @eq-poisson.
-
-$$
-p(x)=\frac{e^{-\lambda} \lambda^{x}}{x !}
-$$ {#eq-poisson}
-
-
-Where $\lambda$ is the number of eruptions per year, $\lambda=\frac{1}{79}$ in this case. The probability of a future eruption in the next $t$ years can be calculated by:
-
-$$
-p_e = 1-\mathrm{e}^{-t \lambda}
-$$ {#eq-probability}
-
-So following the 1971 eruption the probability of an eruption in the following 50 years — the period ending this year — was 0.469. After the event, the number of eruptions per year moves to $\lambda=\frac{1}{75}$ and the probability of a further eruption within the next 50 years (2022-2071) rises to 0.487 and in the next 100 years, this rises again to 0.736.
-
