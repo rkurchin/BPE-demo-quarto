@@ -962,7 +962,7 @@ df.loc[(df['Date'] &gt;= '2021-12-31'), 'Phase'] = 4</code>
     <back>
 </back>
   </sub-article>
-  <sub-article article-type="notebook" id="nb-10-nb-3">
+  <sub-article article-type="notebook" id="nb-9-nb-3">
     <front-stub>
       <title-group>
         <article-title>Seismic Monitoring Stations</article-title>

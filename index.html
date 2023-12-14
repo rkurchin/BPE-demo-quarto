@@ -200,10 +200,10 @@ P(H|E) = \frac{P(E|H)P(H)}{P(E)}
 \tag{1}\]</span></span></p>
 <p>In this notation, <span class="math inline">\(H\)</span> is a hypothesis and <span class="math inline">\(E\)</span> is some evidence we have observed. So Bayes’ theorem tells us that we can compute the probability of some hypothesis being true given that we have observed a piece of evidence if we know: * the probability of observing said evidence in a world where the hypothesis is true, * the probability of our hypothesis being true, and * the probability of observing the evidence.</p>
 <p>It can be “derived” by considering that we can get the area of region AB below both by considering it either as the fraction of A that AB occupies multiplied by the total area of A <em>or</em> as the fraction of B that AB occupies multiplied by the total area of B. (The “Universe” is included to remind us that for A and B to represent probabilities, they have to be normalized!). For a more detailed version of this explanation, check out Oscar Bonilla’s <a href="https://oscarbonilla.com/2009/05/visualizing-bayes-theorem/">blog post on “Visualizing Bayes’ Theorem</a>.</p>
-<div id="fig-bayes-venn" class="quarto-figure quarto-figure-center anchored" data-align="center" width="70%">
+<div id="fig-bayes-venn" class="quarto-figure quarto-figure-center anchored" width="70%" data-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-bayes-venn-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="images/venn-last.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1"><img src="images/venn-last.png" class="img-fluid figure-img" style="width:70.0%" data-align="center"></a><span class="glightbox-desc lightbox-desc-1">Figure&nbsp;1: Visualizing the “derivation” of Bayes’ theorem, from <span class="citation" data-cites="bonilla">Bonilla (<a href="#ref-bonilla" role="doc-biblioref">2009</a>)</span>.</span>
+<a href="images/venn-last.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1"><img src="images/venn-last.png" class="img-fluid figure-img" style="width:70.0%" data-align="center"></a><span class="glightbox-desc lightbox-desc-1">Figure&nbsp;1: Visualizing the “derivation” of Bayes’ theorem, from <span class="citation" data-cites="bonilla">Bonilla (<a href="#ref-bonilla" role="doc-biblioref">2009</a>)</span>.</span>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-bayes-venn-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Visualizing the “derivation” of Bayes’ theorem, from <span class="citation" data-cites="bonilla">Bonilla (<a href="#ref-bonilla" role="doc-biblioref">2009</a>)</span>.
@@ -614,7 +614,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","loop":false,"openEffect":"zoom","closeEffect":"zoom","descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","selector":".lightbox","descPosition":"bottom","loop":false,"closeEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
